@@ -1,7 +1,7 @@
 ---
 author: ["nove-b"]
 title: "Hello New Blog"
-date: "2019-03-10"
+date: "2024-02-12"
 description: "WordPressを辞めてブログをHogoにした"
 tags: ["blog"]
 ShowToc: true
