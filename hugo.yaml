@@ -125,7 +125,7 @@ params:
   ShowAllPagesInArchive: true
   ShowPageNums: true
   ShowToc: true
-  # comments: false
+  comments: true
   images: ["images/papermod-cover.png"]
 
   profileMode:
@@ -158,7 +158,7 @@ params:
 
   editPost:
     URL: "https://github.com/nove-b/nove-b.github.io/tree/main/content"
-    Text: "Suggest Changes" # edit text
+    Text: "変更リクエスト" # edit text
     appendFilePath: true # to append file path to Edit link
 
   # label:
