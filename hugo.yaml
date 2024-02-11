@@ -157,7 +157,6 @@ params:
     - name: mastodon
       title: View Source on Github
       url: "https://fedibird.com/@nove_b"
-    - name: KoFi
 
   editPost:
     URL: "https://github.com/nove-b/nove-b.github.io/content"
