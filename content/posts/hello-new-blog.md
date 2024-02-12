@@ -2,7 +2,7 @@
 author: ["nove-b"]
 title: "Hello New Blog"
 date: "2024-02-12"
-description: "WordPressを辞めてブログをHogoにした"
+description: "WordPressを辞めてブログをHugoにした"
 tags: ["blog"]
 ShowToc: true
 # draft: true
@@ -25,6 +25,9 @@ ShowToc: true
 そのあと、また`WordPress`に戻り2度ほどテーマを作成し、拡張機能([Create Eye Catch For Classic](https://wordpress.org/plugins/create-eye-catch-for-classic/))も作成した。
 
 そして今に至るのである。
+
+---
+
 
 ## 書いた記事は資産になるはずだがどこかに消えた
 
