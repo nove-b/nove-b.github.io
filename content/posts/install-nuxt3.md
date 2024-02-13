@@ -110,14 +110,16 @@ npm ERR! A complete log of this run can be found in: C:\Users\username\AppData\L
 > 代わりに @parcel/watcher を使用するようにこれを設定することができます。これにより、大規模なプロジェクトや Windows プラットフォームでのパフォーマンスが向上する場合があります。
 > また、ソースディレクトリ内のすべてのファイルをウォッチするようにこれを chokidar に設定することもできます。
 
-ということなのでファイルの監視に使用されるためにインストールされているっぽい。
+
+この時点で何も気にせずにnpm installをしていたら問題なく起動していたかもしれないけど、試してないのでわからない。
+
+検索してみると、
 
 [running into errors installing Nuxt3](https://stackoverflow.com/questions/77976536/running-into-errors-installing-nuxt3)
 [Inint nuxt 3 project fails with npm package](https://stackoverflow.com/questions/77893072/inint-nuxt-3-project-fails-with-npm-package)
 
 どうようのエラーに遭遇しているひとも結構いるっぽい。
 
-この時点で何も気にせずにnpm installをしていたら問題なく起動していたかもしれないけど、試してないのでわからない。
 
 大本営`Githu`でも、[Unable to install with command failed sh -c node-gyp rebuild](https://github.com/nuxt/nuxt/issues/25478)標記されているが、`Nuxt`の問題じゃないと言われている。
 でその上の過程[Unable to install with command failed sh -c node-gyp rebuild](https://github.com/unjs/nitro/issues/2123)でプルリクが出されている。
