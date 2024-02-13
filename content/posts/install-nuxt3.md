@@ -117,6 +117,8 @@ npm ERR! A complete log of this run can be found in: C:\Users\username\AppData\L
 
 どうようのエラーに遭遇しているひとも結構いるっぽい。
 
+この時点で何も気にせずにnpm installをしていたら問題なく起動していたかもしれないけど、試してないのでわからない。
+
 大本営`Githu`でも、[Unable to install with command failed sh -c node-gyp rebuild](https://github.com/nuxt/nuxt/issues/25478)標記されているが、`Nuxt`の問題じゃないと言われている。
 でその上の過程[Unable to install with command failed sh -c node-gyp rebuild](https://github.com/unjs/nitro/issues/2123)でプルリクが出されている。
 
