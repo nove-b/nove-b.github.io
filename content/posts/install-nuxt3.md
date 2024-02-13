@@ -1,8 +1,8 @@
 ---
 author: ["nove-b"]
-title: "Install Nuxt3"
-date: "2024-02-12"
-description: "Nuxt3をインストールする"
+title: "Install Nuxt3 | ERR! @parcel watcher"
+date: "2024-02-13"
+description: "仕事でNuxt3を使うことになったので、Nuxt3をインストールする"
 tags: ["Nuxt3"]
 ShowToc: true
 # draft: true
@@ -12,7 +12,7 @@ ShowToc: true
 - windws11
 - node => v20.11.0
 - npm => 10.4.0
-- 
+- nuxt =>
 ---
 
 
@@ -31,6 +31,9 @@ npx nuxi@latest init <project-name>
 ○ bun
 ```
 上記を実行すると、エラーが発生した。
+
+### npm ERR! gyp ERR! cwd C:~\node_modules\@parcel\watcher
+ 
 
 ```
 npm WARN cleanup Failed to remove some directories [
@@ -96,7 +99,7 @@ npm ERR! A complete log of this run can be found in: C:\Users\username\AppData\L
 
 エラーを見てみると`@parcel\watcher` あたりが怪しい気がする。
 
-[@parcel/watcher](https://www.npmjs.com/package/@parcel/watcher)はどうやらファイルの監視を行う`npm`パッケージらしい。
+[@parcel/watcher](https://www.npmjs.com/package/@parcel/watcher)はどうやらファイルの監視を行う`npm`パッケージらしい。オプションで設定ができるように`Nuxt3`に標準装備されているっぽい。
 
 > Set an alternative watcher that will be used as the watching service for Nuxt.
 > Nuxt uses chokidar-granular by default, which will ignore top-level directories (like node_modules and .git) that are excluded from watching.
@@ -111,20 +114,21 @@ npm ERR! A complete log of this run can be found in: C:\Users\username\AppData\L
 > また、ソースディレクトリ内のすべてのファイルをウォッチするようにこれを chokidar に設定することもできます。
 
 
-この時点で何も気にせずにnpm installをしていたら問題なく起動していたかもしれないけど、試してないのでわからない。
+この時点で何も気にせずに`npm install`をしていたら問題なく起動していたかもしれないけど、試してないのでわからない。
 
-検索してみると、
+「エラーが出た、気になる」ということで検索してみると、
 
 [running into errors installing Nuxt3](https://stackoverflow.com/questions/77976536/running-into-errors-installing-nuxt3)
 [Inint nuxt 3 project fails with npm package](https://stackoverflow.com/questions/77893072/inint-nuxt-3-project-fails-with-npm-package)
 
-どうようのエラーに遭遇しているひとも結構いるっぽい。
+同様のエラーに遭遇しているひとも結構いるっぽい。
 
+### 解決方法
 
-大本営`Githu`でも、[Unable to install with command failed sh -c node-gyp rebuild](https://github.com/nuxt/nuxt/issues/25478)標記されているが、`Nuxt`の問題じゃないと言われている。
-でその上の過程[Unable to install with command failed sh -c node-gyp rebuild](https://github.com/unjs/nitro/issues/2123)でプルリクが出されている。
+大本営のリポジトリでも、[Unable to install with command failed sh -c node-gyp rebuild](https://github.com/nuxt/nuxt/issues/25478)のように`issue`標記されているが、`Nuxt`の問題じゃないと言われている。
+で、その上の過程[Unable to install with command failed sh -c node-gyp rebuild](https://github.com/unjs/nitro/issues/2123)でもプルリクが出されている。
 
-で、いろいろたらいまわしにされ、[Unable to install with command failed sh -c node-gyp rebuild](https://github.com/unjs/nitro/issues/2123)で、
+で、色々たらい回しされ、[Unable to install with command failed sh -c node-gyp rebuild](https://github.com/unjs/nitro/issues/2123)で、
 
 > If you add the following to package.json then do a clean install does it work?
 > 
@@ -158,3 +162,5 @@ npm run dev -- -o
 で無事にサーバーも起動した。
 
 なんとなく気分の良くないインストール体験だった。
+
+React主義だけど、より一層React主義になった。開発体験で挽回してくれることに期待している。

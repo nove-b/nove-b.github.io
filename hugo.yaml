@@ -5,7 +5,6 @@ title: nove-b
 paginate: 5
 theme: PaperMod
 
-DefaultContentLanguage: "Japan"
 
 enableInlineShortcodes: true
 enableRobotsTXT: true
@@ -16,7 +15,6 @@ enableEmoji: true
 pygmentsUseClasses: true
 mainsections: ["posts", "papermod"]
 # googleAnalytics: UA-123-45
-defaultContentLanguage: ja
 
 minify:
   disableXML: true
@@ -24,8 +22,8 @@ minify:
 
 
 languages:
-  "Japan":
-    languageName: "Japan"
+  en:
+    languageName: "English"
     weight: 1
     taxonomies:
       category: categories
