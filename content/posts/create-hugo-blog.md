@@ -1,7 +1,7 @@
 ---
 author: ["nove-b"]
 title: "Hugoでブログを立ち上げるまでにやったこと"
-date: "2024-02-13"
+date: "2024-02-13 23:16:28"
 description: "Hugoでブログを立ち上げるまでにやったこと"
 tags: ["blog", "hugo"]
 ShowToc: true
