@@ -1,7 +1,7 @@
 ---
 author: ["nove-b"]
 title: "Install Nuxt3 | ERR! @parcel watcher"
-date: "2024-02-13"
+date: "2024-02-13 23:18:27"
 description: "仕事でNuxt3を使うことになったので、Nuxt3をインストールする"
 tags: ["Nuxt3"]
 ShowToc: true
@@ -164,3 +164,5 @@ npm run dev -- -o
 なんとなく気分の良くないインストール体験だった。
 
 React主義だけど、より一層React主義になった。開発体験で挽回してくれることに期待している。
+
+---

@@ -12,6 +12,12 @@ draft: true
 
 ---
 
+## 環境
+- windws11
+---
+
+
+
 ## Hugo
 
 そもそも`Hugo`のことをよく知らずに技術選定をしてしまったので、ここでしっかり調べておくことにする。
@@ -33,6 +39,42 @@ draft: true
 ## Hugoのインストール
 
 公式サイトに詳しい。
-Windowsなので[Windowsのインストール方法](https://gohugo.io/installation/windows/)通りに行った。
+`Windows`なので[Windowsのインストール方法](https://gohugo.io/installation/windows/)通りに行った。
 
+パッケージ管理システムの[Chocolatey](https://chocolatey.org/)、[Scoop](https://scoop.sh/)と[Winget](https://learn.microsoft.com/en-us/windows/package-manager/)を使うインストール方法が提供されていた。他にも2つインストール方法が記載されている。比較表があるのでわかりやすい。
+
+### パッケージ管理システム
+
+ちなみにパッケージ管理システムとは、
+
+> コンピュータのプログラムを一貫した方法でインストールやアンインストール、ライブラリなどの依存関係を解決する流れをツールによって管理を自動化するシステム
+
+のこと。
+
+`npm`とか`Composer`とかも言語のパッケージ管理ツールにあたる。
+
+
+`Chocolatey`が有名っぽいけど、インストール方法がぱっと見わからなかったので、`Scoop`を使用することにした。
+
+調べると`Mac`では`Homebrew`一択っぽい。Windowsでは`winget`が公式っぽく、インストールも必要なく使えて便利そうだった。
+
+インストール情報をエクスポートすることもできるので、パソコンの買い替え時とかにも重宝できそうだった。
+
+[Windowsのパッケージマネージャー「winget」を使ってみた](https://dev.classmethod.jp/articles/use_windows_package_manager_winget/)
+
+今思えば`winget`にすれば良かったと思うけど、`Scoop`を選択したので、それで進めていく。
+
+### Scoopでインストールする
+
+```
+scoop install hugo-extended
+```
+
+上記コマンドを使用すれば、`hugo`の拡張版をインストールすることができる。
+
+```
+'hugo-extended' (0.122.0) was installed successfully!
+```
 ---
+
+##　Hugoでサイトを構築する
