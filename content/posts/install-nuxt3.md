@@ -12,7 +12,7 @@ ShowToc: true
 - windws11
 - node => v20.11.0
 - npm => 10.4.0
-- nuxt =>
+- nuxt => 3.10.1
 ---
 
 

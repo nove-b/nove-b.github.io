@@ -4,6 +4,9 @@ baseURL: "https://nove-b.github.io/"
 title: nove-b
 paginate: 5
 theme: PaperMod
+languageCode: "ja"
+DefaultContentLanguage: "ja"
+
 
 
 enableInlineShortcodes: true
