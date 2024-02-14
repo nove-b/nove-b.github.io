@@ -1,11 +1,10 @@
 # If your site is in 'https', then make sure your base url isn't written using 'http' otherwise your sitemap would
 # contain http (as opposeed to https) URLs. This would affect Google indexing of your URLs.
 baseURL: "https://nove-b.github.io/"
-title: nove-b
+title: 🦥 nove-b
 paginate: 5
 theme: PaperMod
 languageCode: "ja"
-DefaultContentLanguage: "ja"
 
 
 
@@ -131,7 +130,11 @@ params:
   ShowPageNums: true
   ShowToc: true
   comments: true
-  images: ["images/papermod-cover.png"]
+  assets:
+    favicon: "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f9a5.png"
+
+    label:
+        text: "🦥"
 
   profileMode:
     enabled: false
