@@ -1,11 +1,11 @@
 ---
 author: ["nove-b"]
 title: "Hugoでブログを立ち上げるまでにやったこと"
-date: "2024-02-13 23:16:28"
+date: "2024-02-15 23:30:37"
 description: "Hugoでブログを立ち上げるまでにやったこと"
 tags: ["blog", "hugo"]
 ShowToc: true
-draft: true
+# draft: true
 ---
 
 `Hugo`でこのブログを立ち上げたので、`Hugo`のインストールから`Github Page`で公開するまで。
@@ -66,15 +66,64 @@ draft: true
 
 ### Scoopでインストールする
 
-```
+```powershell
 scoop install hugo-extended
 ```
 
 上記コマンドを使用すれば、`hugo`の拡張版をインストールすることができる。
 
-```
+```powershell
 'hugo-extended' (0.122.0) was installed successfully!
 ```
 ---
 
-##　Hugoでサイトを構築する
+## Hugoでサイトを構築する
+
+`Hugo`でサイトを構築するのは簡単で、下記コマンドを叩くだけでいい。
+
+```hugo
+hugo new site site-name
+```
+上記を実行した後に、
+
+```hugo
+hugo -D serve
+```
+
+で、サイトを確認することができる。
+
+---
+
+## テーマを選んで適応する
+
+`Hugo`は沢山のテーマが提供されている。`Wordpress`に通ずるものがある。
+
+[Hugo Themes](https://themes.gohugo.io/)
+
+今回は一番上にあった[PaperMod](https://themes.gohugo.io/themes/hugo-papermod/)を採用することにした。
+
+[hugo-PaperMod](https://github.com/adityatelange/hugo-PaperMod)
+
+### テーマを導入する
+
+```powershell
+git submodule add https://github.com/adityatelange/hugo-PaperMod.git themes/PaperMod
+```
+#### サブモジュールって？
+
+> 外部の git リポジトリを、自分の git リポジトリのサブディレクトリとして登録し、特定の commit を参照する仕組み
+
+どういうこと🤔?
+
+とりあえず、上記コマンドで`themes`の中に`PaperMod`がインストールされた。
+
+最後に`hugo.yaml`に
+
+```yaml
+theme: PaperMod
+```
+を追加すればテーマが適用される。
+
+できたサイトが[🦥 nove-b](https://nove-b.github.io/)でリポジトリが[こちら](https://github.com/nove-b/nove-b.github.io)。
+
+---
