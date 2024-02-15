@@ -22,7 +22,7 @@ ShowToc: true
 
 [Installation · Get Started with Nuxt](https://nuxt.com/docs/getting-started/installation)
 
-```
+```bash
 npx nuxi@latest init <project-name>
 ❯ Which package manager would you like to use?
 ● npm
@@ -35,7 +35,7 @@ npx nuxi@latest init <project-name>
 ### npm ERR! gyp ERR! cwd C:~\node_modules\@parcel\watcher
  
 
-```
+```bash
 npm WARN cleanup Failed to remove some directories [
 npm WARN cleanup   [
 npm WARN cleanup     'C:\\project\\project-name\\node_modules',
@@ -138,7 +138,8 @@ npm ERR! A complete log of this run can be found in: C:\Users\username\AppData\L
 
 という希望が示されていたので、実行してみた。
 
-```$ npm i
+```bash
+$ npm i
 
 > postinstall
 > nuxt prepare
@@ -155,7 +156,7 @@ found 0 vulnerabilities
 
 インストールも成功し、
 
-```
+```bash
 npm run dev -- -o
 ```
 
