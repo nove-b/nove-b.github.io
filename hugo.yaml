@@ -5,6 +5,7 @@ title: 🦥 nove-b
 paginate: 5
 theme: PaperMod
 languageCode: "ja"
+defaultContentLanguage: "ja"
 
 
 
@@ -24,8 +25,8 @@ minify:
 
 
 languages:
-  en:
-    languageName: "English"
+  ja:
+    languageName: "Japanese"
     weight: 1
     taxonomies:
       category: categories
