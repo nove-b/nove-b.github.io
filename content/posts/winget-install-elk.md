@@ -20,7 +20,7 @@ ShowToc: true
 
 > Chocolateyが有名っぽいけど、インストール方法がぱっと見わからなかったので、Scoopを使用することにした。
 > 調べるとMacではHomebrew一択っぽい。Windowsではwingetが公式っぽく、インストールも必要なく使えて便利そうだった。
-> [Hugoでブログを立ち上げるまでにやったこと](https://nove-b.github.io/posts/create-hugo-blog/)
+> [Hugo(ヒューゴ)でブログを立ち上げるまでにやったこと](https://nove-b.github.io/posts/create-hugo-blog/)
 
 その際に、パッケージマネージャー（`Winget`）の便利さを初めて知った。
 
