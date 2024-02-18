@@ -100,6 +100,17 @@ winget upgrade --all
 winget export --output C:{path}
 ```
 
+<mark>2024-02-18 09:24:38：追記</mark>
+
+エクスポートされなくて、色々試行錯誤した結果、ファイル名を指定していないことに気が付いた。
+
+正しくは、下記で無事に`json`が作成された。
+
+```powershell
+winget export --output C:{path}\{file-name}.json
+```
+
+
 これで、インストールした情報をエクスポートできる。
 
 ### エクスポート情報をインポートする
