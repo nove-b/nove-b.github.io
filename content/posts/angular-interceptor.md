@@ -30,7 +30,7 @@ angular => 15.0.4
 
 ### リクエストに対して処理をする
 
-``` angular
+``` typescript
 import {
   HttpEvent,
   HttpHandler,
@@ -62,7 +62,7 @@ export class AuthInterceptor implements HttpInterceptor {
 
 ### レスポンスに対して処理をする
 
-```angular
+```typescript
 import {
   HttpEvent,
   HttpHandler,
@@ -100,7 +100,7 @@ export class ErrorInterceptor implements HttpInterceptor {
 
 それぞれ処理を書いたら`app.module.ts`の`providers`に登録する。
 
-```angular
+```typescript
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true },
     { provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true },
