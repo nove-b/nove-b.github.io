@@ -167,7 +167,7 @@ params:
 
   editPost:
     URL: "https://github.com/nove-b/nove-b.github.io/tree/main/content"
-    Text: "変更リクエスト" # edit text
+    Text: "更新履歴" # edit text
     appendFilePath: true # to append file path to Edit link
 
   # label:
