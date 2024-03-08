@@ -157,6 +157,14 @@ params:
 
         Hello.I'm an engineer who enjoys personal development as a hobby.I mainly handle frontend tasks at work.Therefore, I focus on backend development in my personal projects🦖.
 
+        ---
+
+        2024の目標 💪
+
+        - [ ] ネイティブアプリをリリースする
+        - [ ] 基本情報技術者資格を取る
+        - [ ] OSS活動にコントリビューとする
+
   socialIcons:
     - name: github
       title: View Source on Github
