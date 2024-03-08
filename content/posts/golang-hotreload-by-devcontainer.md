@@ -5,7 +5,7 @@ date: 2024-03-09 00:34:10
 description: 'Golangのnet/httpでホットリロードしたい'
 tags: ['golang']
 ShowToc: true
-draft: true
+draft: false
 ---
 
 ## ホットリロードが欲しい
