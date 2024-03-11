@@ -164,6 +164,7 @@ params:
         - [ ] ネイティブアプリをリリースする
         - [ ] 基本情報技術者資格を取る
         - [ ] OSS活動にコントリビューとする
+        - [ ] Mastodonのサーバーを立ち上げる
 
   socialIcons:
     - name: github
