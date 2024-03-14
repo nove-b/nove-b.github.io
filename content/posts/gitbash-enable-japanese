@@ -1,0 +1,4 @@
+gitbashが日本語化を受け付けなかったので、日本語対応にした。
+user/username/.bash_profile
+に
+export LC_ALL=ja_JP.utf8を追加
